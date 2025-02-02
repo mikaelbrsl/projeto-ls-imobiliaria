@@ -1,0 +1,382 @@
+@font-face {
+  font-family: montserrat;
+  src: url(/Montserrat-VariableFont_wght.ttf);
+}
+
+@media (max-width: 567px) {
+  header > a {
+   margin: 0 auto;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#h1 {
+  font-family: montserrat;
+  margin: 80px 40px;
+  text-align: center;
+  font-size: 37px;
+  font-style: bold;
+
+}
+
+h2 {
+  font-family: montserrat;
+  margin-bottom: 40px;
+}
+
+p, h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul, li, body {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 25px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header ul {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+header nav {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.menu {
+  display: flex;
+  color: white;
+  align-content: center;
+}
+
+.menu li {
+  padding: 8px 20px;
+  align-self: center;
+  transition: background 0.5s;
+  will-change: background;
+}
+
+.menu li:hover {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+header img {
+  width: 150px; /* Aumente ou diminua esse valor conforme necessário */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.lancamentos {
+  text-align: center;
+  font-size: 30px;
+}
+
+.fotoDestaque {
+  height: 220px;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  margin-bottom: 10px;
+
+}
+
+.destaque {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0px auto;
+  
+}
+
+.destaque > article {
+  flex: 1 1 200px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  max-width: fit-content;
+  margin: 20px;
+ 
+}
+
+.destaque > article:hover {
+  box-shadow: 0px 0px 12px  rgb(0, 0, 0, 0.3);
+}
+
+.flexDescricao {
+  display: flex;
+  align-items: center;
+
+}
+
+.destaque h3, .destaque span {
+  padding: 0px 10px;
+  color: black;
+
+}
+
+.destaque p {
+  margin: 10px 0px;
+  color: black;
+}
+
+.span-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.mais {
+  background-color: #e3e368;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 20px;
+  width: 75%;
+  padding: 5px 0;
+  transition: background 0.8s;
+  will-change: background;
+  
+}
+
+.mais:hover {
+  cursor: pointer;
+  background-color: #c6c658;
+}
+
+/* icone */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+.footer {
+  display: flex;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+footer nav {
+  width: 100%;
+}
+
+.social {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  width: 70%;
+  margin: 0 auto;
+  padding: 0;
+  
+}
+
+.nosDescricao {
+  color: black;
+  display: block;
+  margin: 20px 60px;
+  font-family: montserrat;
+  text-align:justify;
+}
+
+.mapa {
+  width: 100%;
+  height: 400px;
+}
+
+footer li {
+  font-size: 40px;
+  margin: 0;
+}
+
+.footer nav {
+  max-width: 100%;
+}
+
+footer i:hover {
+  cursor: pointer;
+}
+
+.conhecer {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
+}
+
+
+html {
+  scrollbar-width: none;
+}
+
+.container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 100px 0 30px 0;
+  text-align: center;
+  color: #333;
+}
+
+
+/* Estilos para o formulário */
+#imovelForm {
+  display: flex;
+  flex-direction: column; /* Organiza os campos na vertical */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  max-width: 500px;
+  margin: 20px auto; /* Centraliza o formulário */
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#imovelForm label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+#imovelForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#imovelForm input:focus {
+  border-color: #4CAF50; /* Cor ao focar nos campos */
+  outline: none;
+}
+
+#imovelForm button {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center;;
+}
+
+#imovelForm button:hover {
+  background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+#imovelForm button:active {
+  background-color: #398e3b; /* Cor de fundo quando o botão for pressionado */
+}
+
+/* Estilos para os campos de entrada */
+#imovelForm input[type="text"], 
+#imovelForm input[type="number"] {
+  box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
+}
+
+#imovelForm input[type="text"]::placeholder, 
+#imovelForm input[type="number"]::placeholder {
+  color: #999; /* Cor do texto de placeholder */
+  font-style: italic;
+}
+
+/* Estilos para os campos de seleção */
+#imovelForm select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+#imovelForm select:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+#imovelForm select option {
+  font-size: 16px;
+}
+
+/* Ajuste no padding para labels */
+#imovelForm label {
+  margin-bottom: 8px;
+  color: #333;
+  font-size: 16px;
+}
+
+/* #limparStorage {
+ 
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+}
+
+#limparStorage:hover {
+  background-color: #d32f2f; 
+  transform: scale(1.05); 
+}
+
+#limparStorage:active {
+  background-color: #c62828; 
+}
+
+#limparStorage:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 69, 58, 0.8); 
+} */
+
