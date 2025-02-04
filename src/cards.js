@@ -50,25 +50,10 @@ function criarCard(imovel) {
 export function renderizarImoveis() {
     const imoveis = carregarImoveis();
     const cardsContainer = document.getElementById('cardsContainer');
-    cardsContainer.innerHTML = '';
-
-    if (imoveis.length === 0) {
-        cardsContainer.innerHTML = '<p>Nenhum imóvel cadastrado.</p>';
-    } else {
-        imoveis.forEach(imovel => {
-            const card = criarCard(imovel);
-            cardsContainer.appendChild(card);
-        });
-    }
+    cardsContainer.innerHTML = imoveis.length 
+        ? imoveis.map(imovel => criarCard(imovel).outerHTML).join('')
+        : '<p>Nenhum imóvel cadastrado.</p>';
 }
 
 // Renderiza os imóveis ao carregar a página
 document.addEventListener('DOMContentLoaded', renderizarImoveis);
-
-
-{/* <h3>${imovel.localizacao}</h3>
-        <p>Preço: R$ ${imovel.preco}</p>
-        <p>Quartos: ${imovel.qnt_quartos}</p>
-        <p>Banheiros: ${imovel.qnt_banheiros}</p>
-        <p>Área de lazer: ${imovel.area_lazer}</p>
-        <p>Piscina: ${imovel.piscina}</p> */}

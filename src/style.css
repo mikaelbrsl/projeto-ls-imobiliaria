@@ -58,13 +58,13 @@ header {
 header img {
   width: 100%; 
   height: 100%;
-  object-fit: cover; /* Mantém proporção e corta o excesso */
+  object-fit: cover; 
 }
 
 .imagem-container {
-  width: 200px; /* Ajuste conforme necessário */
-  height: 100px; /* Altura fixa para cortar a imagem */
-  overflow: hidden; /* Esconde a parte que ultrapassa */
+  width: 200px; 
+  height: 100px; 
+  overflow: hidden; 
 }
 
 header a {
@@ -270,10 +270,10 @@ html {
 /* Estilos para o formulário */
 #imovelForm {
   display: flex;
-  flex-direction: column; /* Organiza os campos na vertical */
-  align-items: flex-start; /* Alinha os itens à esquerda */
+  flex-direction: column; 
+  align-items: flex-start; 
   max-width: 500px;
-  margin: 20px auto; /* Centraliza o formulário */
+  margin: 20px auto; 
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -297,7 +297,7 @@ html {
 }
 
 #imovelForm input:focus {
-  border-color: #4CAF50; /* Cor ao focar nos campos */
+  border-color: #4CAF50; 
   outline: none;
 }
 
@@ -314,22 +314,22 @@ html {
 }
 
 #imovelForm button:hover {
-  background-color: #45a049; /* Cor de fundo ao passar o mouse */
+  background-color: #45a049;
 }
 
 #imovelForm button:active {
-  background-color: #398e3b; /* Cor de fundo quando o botão for pressionado */
+  background-color: #398e3b; 
 }
 
 /* Estilos para os campos de entrada */
 #imovelForm input[type="text"], 
 #imovelForm input[type="number"] {
-  box-sizing: border-box; /* Garante que o padding e a borda sejam incluídos na largura total */
+  box-sizing: border-box;
 }
 
 #imovelForm input[type="text"]::placeholder, 
 #imovelForm input[type="number"]::placeholder {
-  color: #999; /* Cor do texto de placeholder */
+  color: #999; 
   font-style: italic;
 }
 
@@ -360,30 +360,4 @@ html {
   color: #333;
   font-size: 16px;
 }
-
-/* #limparStorage {
- 
-  color: white;
-  font-size: 16px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  font-weight: bold;
-}
-
-#limparStorage:hover {
-  background-color: #d32f2f; 
-  transform: scale(1.05); 
-}
-
-#limparStorage:active {
-  background-color: #c62828; 
-}
-
-#limparStorage:focus {
-  outline: none;
-  box-shadow: 0 0 10px rgba(255, 69, 58, 0.8); 
-} */
 

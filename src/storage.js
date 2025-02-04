@@ -10,9 +10,3 @@ export function carregarImoveis() {
   return JSON.parse(localStorage.getItem('imoveis')) || [];
 }
 
-// Função para limpar todos os imóveis (opcional, para testes ou reset)
-// document.getElementById('limparStorage').addEventListener('click', function () {
-//   localStorage.removeItem('imoveis'); // Remove todos os dados do localStorage
-//   alert('Todos os dados foram apagados!');
-//   location.reload(); // Recarrega a página para aplicar as mudanças
-// });
