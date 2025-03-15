@@ -31,12 +31,34 @@
             <ul class="menu">
                 <li>Compra</li>
                 <li>
-                    <a href="cadastro.html">Cadastro</a>
+                    <a href="#" id="abrirModal">Cadastro</a> 
                 </li>
                 <li>
                     <a href="contato.html">Contato</a>
                 </li>
             </ul>
+            
+            <!-- Modal
+            <button id="abrirModal">Cadastro</button> -->
+
+            <div id="modalLogin">
+                <span id="fecharModal" style="cursor: pointer;">&times;</span>
+                <h2>Login</h2>
+                <form id="loginForm">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                    
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" required>
+                    
+                    <button type="submit" id="btnLogin">Entrar</button>
+                </form>
+            </div>
+
+            <div class="modal-overlay"></div>
+
+            
+               
         </nav>
     </header>
 
